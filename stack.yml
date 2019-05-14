@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  ofc-app:
+    lang: node10-express
+    handler: ./ofc-app
+    image: amit9192/ofc-app:latest
